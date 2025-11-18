@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76dadf96f90d8eb46942e5032e24afe5, type: 3}
-  m_Name: variables
+  m_Script: {fileID: 11500000, guid: 02a308b7645acd5448f26f6ae872b2b6, type: 3}
+  m_Name: debugScriptable
   m_EditorClassIdentifier: 
-  tankSpeed: 1
-  tankSize: 3
-  bulletSpeed: 10
-  bulletSize: 1
-  testSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  gazi: 0
+  turn: 0
+  changeGear: 0
+  gear: 0

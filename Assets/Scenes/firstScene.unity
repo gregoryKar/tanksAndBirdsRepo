@@ -350,6 +350,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1661017716}
   - component: {fileID: 1661017715}
+  - component: {fileID: 1661017717}
   m_Layer: 0
   m_Name: MAIN
   m_TagString: Untagged
@@ -364,12 +365,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661017714}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d59cc432dfafac649b462674512ad235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  variables: {fileID: 11400000, guid: 6bf991ccecb467a4f96145af64156917, type: 2}
 --- !u!4 &1661017716
 Transform:
   m_ObjectHideFlags: 0
@@ -385,6 +385,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1661017717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1661017714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0569bb5acb8ec824a87c0b3df169b6a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _engineData: {fileID: 11400000, guid: 1e62e8af2a9afb24bb6deeee143d8c4c, type: 2}
+  _turretData: {fileID: 11400000, guid: e634aa251c007094abf957886a6a05cd, type: 2}
+  _bullets: {fileID: 11400000, guid: b1afa4be155475c4d8dd7a5e781200fd, type: 2}
+  variables: {fileID: 11400000, guid: 6bf991ccecb467a4f96145af64156917, type: 2}
+  myDebug: {fileID: 11400000, guid: 3b018ae4b2dacb14bbf01ec3912e4e1f, type: 2}
 --- !u!1 &1759511676
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,13 +412,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1759511678}
   - component: {fileID: 1759511677}
+  - component: {fileID: 1759511679}
   m_Layer: 0
   m_Name: test Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1759511677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -472,6 +490,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1759511679
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759511676}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
